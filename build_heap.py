@@ -26,7 +26,7 @@ def down(i,data,swaps):
     if i != min:
         data[i], data[min] = data[min], data[i]
         swaps.append((i, min))
-        sift_down(min, data, swaps)
+        down(min, data, swaps)
 
 def main():
     
