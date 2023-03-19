@@ -41,7 +41,7 @@ def main():
         inputs2 = input()
         if "a" not in inputs2:
             with open("./tests/"+filename, mode='r') as fails:
-                 = int(fails.readline())
+                n = int(fails.readline())
                 data = list(map(int,fails.readline().split()))
     else:
         print("error")
