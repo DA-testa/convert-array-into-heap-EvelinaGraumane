@@ -40,7 +40,7 @@ def main():
     elif "F" in inputs:
         inputs2 = input()
         if "a" not in inputs2:
-            with open("./tests/"+filename, mode='r') as fails:
+            with open("./tests/"+inputs2, mode='r') as fails:
                 n = int(fails.readline())
                 data = list(map(int,fails.readline().split()))
     else:
